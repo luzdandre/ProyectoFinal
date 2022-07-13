@@ -1,0 +1,36 @@
+{% extends "Home/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h1 class="mb-5">Vientos del Agro SA </h1>
+  <h2 class="mb-6">Ingresar Gerencia:</h2>
+
+    {% if miFormulario.errors %}
+
+    <p style="color: red;"> Están mal los datos, revisar</p>
+
+    {% endif %}
+    
+    <form action="" method="POST">{% csrf_token %}
+
+             
+        <table>
+            {{ miFormulario.as_table }}
+        </table>
+
+        <input type="submit", value="Enviar">
+
+    </form>
+
+    <h2 class="mb-6">Buscar Gerencia:</h2>
+    
+    <form action="/Home/buscar/" method="GET">
+        <input type="text" name="director" id="director">
+        <input type="submit" value="buscar">
+    </form>
+    
+    <a href="{% url 'LeerGerencia' %}"> Ver Gerencias</a> 
+
+{% endblock %}

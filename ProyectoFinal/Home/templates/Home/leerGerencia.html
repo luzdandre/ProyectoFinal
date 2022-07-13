@@ -1,0 +1,23 @@
+{% extends "Home/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    
+    {% for p in gerencia %}
+
+        <li>{{p}}</li>  
+        <button>
+            <a href="{% url 'EliminarGerencia' p.nombre_gerencia %}"> Eliminar</a>
+            <a href="{% url 'EditarGerencia' p.nombre_gerencia%}"> Editar</a>
+        </button>
+
+
+
+    {% endfor %}
+    <br>
+    <br>
+    <a href="gerencia">Agregar otra gerencia</a>
+
+
+    {% endblock %}

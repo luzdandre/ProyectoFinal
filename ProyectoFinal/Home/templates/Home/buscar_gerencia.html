@@ -1,0 +1,30 @@
+{% extends "Home/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<form action="/Home/buscar/" method="GET">
+    <input type="text" name="director" id="director">
+    <input type="submit" value="buscar">
+</form>
+
+<h1>Busqueda de Directores </h1>
+{% if gerencia %}
+
+<p>Estamos buscando al director : {{director}}</p>
+
+
+<ul>
+{% for gerencia in gerencia %}
+    <li> Nombre de la gerencia :{{ gerencia.nombre_gerencia}} </li>
+    <li> Director: {{ gerencia.director}}</li>
+    <li> Cantidad de empleados :{{ gerencia.cant_empleados}}</li>
+{% endfor %}
+</ul>
+{% endif %}
+    
+<button>
+    <a href="{% url 'Gerencia'  %}"> volver</a></button>
+{% endblock %}

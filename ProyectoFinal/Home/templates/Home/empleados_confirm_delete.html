@@ -1,0 +1,14 @@
+{% extends "Home/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    
+    <form method="post">{% csrf_token%}
+        Estas seguro que deseas borrar al empleado "{{ object}}"?
+        <input type="submit" value="submit" />
+      </form>
+    
+<button>
+<a href="{% url 'Empleados'  %}"> volver</a></button>   
+{% endblock %}

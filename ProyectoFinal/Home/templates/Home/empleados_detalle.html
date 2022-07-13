@@ -1,0 +1,18 @@
+{% extends "Home/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<body>
+    <p> Nombre del Empleado: <i>{{empleados.nombre}}</i></p>
+    <p> Apellido :<i> {{empleados.apellido}}</i>    </p>
+    <p> Area: <i>{{empleados.area}}</i></p>
+    <p> Fecha de ingreso:<i> {{empleados.fecha_ingreso}}</i></p>
+
+    <p>
+        <a href="{% url 'List' %}">Regresar</a>
+    </p>
+</body>
+
+
+{% endblock %}

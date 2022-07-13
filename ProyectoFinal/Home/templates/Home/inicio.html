@@ -1,0 +1,23 @@
+{% extends "Home/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<h1 class="mb-5">Vientos del Agro SA </h1>
+  <h2 class="mb-6">HHRR</h2>
+
+
+<h2> {{mensaje}}</h2>
+
+
+<br>
+{%if request.user.is_authenticated %}
+<button><a href="{% url 'logout' %}"> salir</a></button>
+<button>
+  <a href="{% url 'EditarPerfil'  %}"> Editar usuario</a></button>
+{% endif %}
+</br>
+    
+
+
+{% endblock %}

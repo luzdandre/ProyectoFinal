@@ -1,32 +1,41 @@
 # ProyectoFinal
 ## Participante: Luz d'Andre
 ## App: Area de HHRR de una empresa
+## VIDEO :
+
+
+
 ### NavBar de la aplicacion / Home: 
 ![image](https://user-images.githubusercontent.com/106789905/178859712-a71975cf-6354-4dfc-b9e7-58e8cfedce5c.png)
 
 *  INICIAR: funcionalidades: 
-    *         Ingresar por medio de un login de usuario.
-    *         Generar un usuario nuevo o modificar los datos del usuario.
+    *     Ingresar por medio de un login de usuario.
+    *     Generar un usuario nuevo o modificar los datos del usuario.
 		(una vez ingresado como usuario, el nombre del mismo aparece en cada pag. )
+
 *  INICIO: funcionalidades: 
-    *     logout
+    *     Logout
     *     Editar los datos del usuario. 
-*  ABOUT: una breve descripcion de quien soy y de la app.
-    *    ![image](https://user-images.githubusercontent.com/106789905/178857046-db3071f0-760c-4e6c-992c-7215def025e1.png)
+
+*  ABOUT: 
+    *     Una breve descripcion de quien soy y de la app.
+    *     
+        ![image](https://user-images.githubusercontent.com/106789905/178857046-db3071f0-760c-4e6c-992c-7215def025e1.png)
+
 *  AREAS: funcionalidades: 
-    *            ingresar nuevas areas a traves de un form a la BBDD 
+    *     Ingresar nuevas areas a traves de un form a la BBDD 
 *  EMPLEADOS: funcionalidades: 
-    *            Ingresar nuevos empleados a partir de un form 
-    *        Ver la lista de empleados guardados en la BD
-    *        Ver el detalle de la informacion de cada empleado
-    *        eliminar empleados
-    *        modificar datos de los empleados
+    *     Ingresar nuevos empleados a partir de un form 
+    *     Ver la lista de empleados guardados en la BD
+    *     Ver el detalle de la informacion de cada empleado
+    *     Eliminar empleados
+    *     Modificar datos de los empleados
 *  GERENCIA: funcionalidades:
-    *            Ingresar nuevas gerencias
-    *        Buscar una gerencia a partir del nombre del director
-    *        Ver el listado de gerencias, modificarlas y eliminarlas
+    *     Ingresar nuevas gerencias
+    *     Buscar una gerencia a partir del nombre del director
+    *     Ver el listado de gerencias, modificarlas y eliminarlas
 *  VACACIONES: Funcionalidades:
-    *            ingresar solicitudes de vacaciones ( fecha de la solicitud, empleado, fecha de inicio y fin de las vacaciones)
+    *     Ingresar solicitudes de vacaciones ( fecha de la solicitud, empleado, fecha de inicio y fin de las vacaciones)
             
             
         
@@ -46,9 +55,9 @@
 ![image](https://user-images.githubusercontent.com/106789905/178859807-26f4d469-f611-4009-a5e6-44511f306056.png)
 
 
-** views.py
+### views.py:
 
-* las views para realizar los formularios fueron a traves del metodo POST
+* views para realizar los formularios fueron a traves del metodo POST
 
 ![image](https://user-images.githubusercontent.com/106789905/178859382-553109bb-1cbe-47c8-8d66-076abca44069.png)
 

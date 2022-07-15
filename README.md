@@ -3,7 +3,7 @@
 ## App: Area de HHRR de una empresa
 ## VIDEO :
 
-
+https://drive.google.com/file/d/1fY_JaMWViFokeIOHxlRmMfovk0h3DB13/view?usp=sharing
 
 ### NavBar de la aplicacion / Home: 
 ![image](https://user-images.githubusercontent.com/106789905/178859712-a71975cf-6354-4dfc-b9e7-58e8cfedce5c.png)
